@@ -19,7 +19,7 @@
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Playfair+Display&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Playfair+Display&amp;display=swap">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
     integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" 
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-    <script src="//unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/selectric.css">
@@ -41,6 +41,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="mobile-menu">
+            <div class="mobile-menu__bg"></div>
+            <div class="mobile-menu__block">
+                <button class="mobile-menu__close">
+                    <img src="./assets/icons/cross.svg" alt="">
+                </button>
+                <a href="#" class="mobile-menu__item">Расписание</a>
+                <a href="#" class="mobile-menu__item">Курсы</a>
+                <a href="#" class="mobile-menu__item">Команда</a>
+                <a href="#" class="mobile-menu__item">Выпусники</a>
+                <a href="#" class="mobile-menu__item">Мероприятия</a>
+                <a href="#" class="mobile-menu__item">Академия</a>
+                <a href="#" class="mobile-menu__item">Магазин</a>
+                <a href="#" class="mobile-menu__item">Контакты</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-lg-none">
+                    <button class="header__burger-btn" id="burger">
+                        <img src="./assets/icons/burger.svg" alt="">
+                    </button>
+                </div>
+                <div class="col-6 d-none d-lg-block">
+                    <div class="header__link-block mt">
+                        <a href="#" class="header__link">Расписание</a>
+                        <a href="#" class="header__link">Курсы</a>
+                        <a href="#" class="header__link">Команда</a>
+                        <a href="#" class="header__link">Выпусники</a>
+                        <a href="#" class="header__link">Мероприятия</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="header__phone-block">
+                        <a href="tel:+7 (968) 100-04-34" class="header__phone">+7 (968) 100-04-34</a>
+                        <div class="messengers">
+                            <a href="#" class="tg">
+                                <img src="./assets/icons/tg-icon.svg" alt="">
+                            </a>
+                            <a href="#" class="wa">
+                                <img src="./assets/icons/watsapp-icon.svg" alt="">
+                            </a>
+                            <a href="#" class="viber">
+                                <img src="./assets/icons/viber-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row logo-row">
+                <div class="col-12 text-center">
+                    <div class="header__logo-block">
+                        <div class="splitter"></div>
+                        <img src="./assets/logo.png" alt="" class="header__logo img-fluid">
+                        <div class="splitter"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-lg-flex">
+                <div class="col-12">
+                    <div class="header__link-block">
+                        <a href="#" class="header__link">Академия</a>
+                        <a href="#" class="header__link">Магазин</a>
+                        <a href="#" class="header__link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 <div class="container-fluid darkGrayBg pb-50px">
     <div class="row mt-45px">
@@ -97,5 +167,79 @@
     </div>
 </div>
 
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <a href="mailto:storesota@gmail.com" class="footer__text">storesota@gmail.com</a>
+                <div class="footer__text">Россия, Омск, 5-ой Армии, 6</div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <img src="./assets/logo.png" alt="" class="footer__logo">
+            </div>
+            <div class="col-12 col-lg-auto ml-auto">
+                <div class="footer__socials">
+                    <a href="#">
+                        <img src="./assets/icons/instagram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/vk-social-network-logo.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/facebook.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="footer__contacts">
+                    <a href="tel:+7 (968) 100-04-34" class="footer__phone">+7 (968) 100-04-34</a>
+                    <div class="messengers">
+                        <a href="#" class="tg">
+                            <img src="./assets/icons/tg-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="wa">
+                            <img src="./assets/icons/watsapp-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="viber">
+                            <img src="./assets/icons/viber-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <hr>
+            </div>
+            <div class="col-6 pr-1 pr-lg-3 d-lg-none">
+                <a href="#" class="footer__link ml-lg-auto">Расписание</a>
+                <a href="#" class="footer__link">Курсы</a>
+                <a href="#" class="footer__link">Команда</a>
+                <a href="#" class="footer__link">Выпусники</a>
+            </div>
+            <div class="col-6 pl-1 pl-lg-3 d-lg-none">
+                <a href="#" class="footer__link ">Мероприятия</a>
+                <a href="#" class="footer__link">Академия</a>
+                <a href="#" class="footer__link">Магазин</a>
+                <a href="#" class="footer__link mr-lg-auto">Контакты</a>
+            </div>
+            <div class="col-12 justify-content-center d-none d-lg-flex">
+                <a href="#" class="footer__link ml-lg-auto">Расписание</a>
+                <a href="#" class="footer__link">Курсы</a>
+                <a href="#" class="footer__link">Команда</a>
+                <a href="#" class="footer__link">Выпусники</a>
+                <a href="#" class="footer__link ">Мероприятия</a>
+                <a href="#" class="footer__link">Академия</a>
+                <a href="#" class="footer__link">Магазин</a>
+                <a href="#" class="footer__link mr-lg-auto">Контакты</a>
+
+            </div>
+            <div class="col-12">
+                <div class="footer__copyright">
+                    © OSA ACADEMY, 2019
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

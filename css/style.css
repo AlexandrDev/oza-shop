@@ -3456,7 +3456,7 @@ body.noTouchDevice .productCardWrapper:hover .addToCart {
 
   .footer__link {
     display: inline-block;
-    margin: 0;
+    margin: 0 24px;
   }
 
   .footer__copyright {
