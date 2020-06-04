@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ОЗА</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Playfair+Display&amp;display=swap">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" 
+    integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" 
+    crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="//unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/selectric.css">
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container-fluid darkGrayBg pb-50px">
+    <div class="row mt-45px mt-phone-75px">
+        <div class="container">
+            <div class="bigPageTitle text-center">
+                SOTA professional
+            </div>
+
+            <div class="row mt-120px mt-phone-75px no-gutters align-items-center brandCardRow">
+                <div class="col-xl-5 col-lg-6 order-1 order-lg-0">
+                    <div class="brandCard d-flex d-lg-block align-items-center">
+                        <img src="img/sota_logo.svg" class="brandLogo mr-tablet-35px">
+                        <div>
+                            <div class="subTitle mt-50px mt-tablet-0px">
+                                Мировой бренд<br>с амбициями
+                            </div>
+                            <a href="#" class="actionBtn mt-35px mt-tablet-15px">
+                                Каталог SOTA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 order-0 order-lg-1">
+                    <img src="img/sota_detail.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row mt-75px mt-phone-70px align-items-center">
+                <div class="col-lg-8 col-md-9">
+                    <div class="pageTitle">
+                        Технологии для работы с материалами для маникюра SOTA
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 d-none d-md-flex align-items-center justify-content-end">
+                    <a href="javascript:void(0)" onclick="phasesCarousel.trigger('prev.owl.carousel')">
+                        <img src="img/ui/carousel_left.svg">
+                    </a>
+                    <a href="javascript:void(0)" onclick="phasesCarousel.trigger('next.owl.carousel')">
+                        <img src="img/ui/carousel_right.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-40px mt-phone-50px">
+                <div class="col-12">
+
+                    <div class="phasesCarouselWrapper">
+                        <div class="owl-carousel phasesCarousel">
+                            <a data-toggle="tab" href="#phase1" class="active phaseCardLink" data-tab-index="1">
+                                <div class="phaseCard">
+                                    <div class="number">
+                                        1 фаза
+                                    </div>
+                                    <div class="name">
+                                        обеспечение адгезии
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-center">
+                                    <div class="veticalLine"></div>
+                                </div>
+                            </a>
+                            <a data-toggle="tab" href="#phase2" class="phaseCardLink" data-tab-index="2">
+                                <div class="phaseCard">
+                                    <div class="number">
+                                        2 фаза
+                                    </div>
+                                    <div class="name">
+                                        Создание архитектуры
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-center">
+                                    <div class="veticalLine"></div>
+                                </div>
+                            </a>
+                            <a data-toggle="tab" href="#phase3" class="phaseCardLink" data-tab-index="3">
+                                <div class="phaseCard">
+                                    <div class="number">
+                                        3 фаза
+                                    </div>
+                                    <div class="name">
+                                        декоративные покрытия
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-center">
+                                    <div class="veticalLine"></div>
+                                </div>
+                            </a>
+                            <a data-toggle="tab" href="#phase4" class="phaseCardLink" data-tab-index="4">
+                                <div class="phaseCard">
+                                    <div class="number">
+                                        4 фаза
+                                    </div>
+                                    <div class="name">
+                                        завершающие покрытия
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-center">
+                                    <div class="veticalLine"></div>
+                                </div>
+                            </a>
+                            <a data-toggle="tab" href="#phase5" class="phaseCardLink" data-tab-index="5">
+                                <div class="phaseCard">
+                                    <div class="number">
+                                        5 фаза
+                                    </div>
+                                    <div class="name">
+                                        обеспечение адгезии
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-center">
+                                    <div class="veticalLine"></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="phasesCarouselMobileArrows">
+                            <a href="javascript:void(0)" onclick="phasesCarousel.trigger('prev.owl.carousel')">
+                                <img src="img/ui/carousel_left.svg">
+                            </a>
+                            <a href="javascript:void(0)" onclick="phasesCarousel.trigger('next.owl.carousel')">
+                                <img src="img/ui/carousel_right.svg">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        let phasesCarousel;
+                        let phasesCarouselIndex = 1;
+                    
+                        $(document).ready(function(){
+                            phasesCarousel = $(".phasesCarousel").owlCarousel({
+                                items: 4,
+                                margin: 30,  
+                                dots: false,
+                                touchDrag: false,
+                                pullDrag: false,
+                                mouseDrag: false,                     
+                                responsive: {
+                                    0: {
+                                        items: 1,
+                                    },
+                                    768: {
+                                        items: 2,
+                                    },
+                                    992: {
+                                        items: 3,
+                                    },
+                                    1200: {
+                                        items: 4,
+                                    }
+                                }
+                            });
+
+                            $('.phasesCarousel a').on('click', function (e) {
+                                e.preventDefault()
+                                phasesCarouselIndex = parseInt($(this).attr('data-tab-index'));
+                                $('.phasesCarousel a').removeClass("active");
+                                $(this).tab('show')
+                                console.log(phasesCarouselIndex);
+                            });
+
+                            phasesCarousel.on('next.owl.carousel', function(event) {
+                                let nextTab = $('.phasesCarousel a[data-tab-index="' + (phasesCarouselIndex + 1) + '"]');
+                                if (nextTab.length) {
+                                    $('.phasesCarousel a').removeClass("active");
+                                    phasesCarouselIndex += 1;
+                                    $(nextTab).tab('show');
+                                }
+                            });
+
+                            phasesCarousel.on('prev.owl.carousel', function(event) {
+                                if (phasesCarouselIndex - 1 > 0) {
+                                    let prevTab = $('.phasesCarousel a[data-tab-index="' + (phasesCarouselIndex - 1) + '"]');
+                                    $('.phasesCarousel a').removeClass("active");
+                                    phasesCarouselIndex -= 1;
+                                    $(prevTab).tab('show');
+                                }
+                            });
+
+                        });
+                                        
+                    </script>
+
+                    <div class="tab-content mt-30px mt-phone-45px">
+                        <div class="tab-pane active" id="phase1" role="tabpanel">
+                            <div class="row categoriesWrapper d-none d-md-flex">
+                                <div class="col-lg-3 col-md-4 col-auto categoryWrapper">
+                                    <div class="categoryName mb-25px">Топы</div>
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-auto categoryWrapper">
+                                    <div class="categoryName mb-25px">Гель-лаки</div>
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-auto categoryWrapper">
+                                    <div class="categoryName mb-25px">Гель-краски</div>
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <ul class="nav categoriesMobileTabs d-md-none">
+                                <li class="nav-item" role="presentation">
+                                  <a class="active categoryName" data-toggle="pill" href="#phase1-top" aria-selected="true">
+                                      Топы
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="categoryName" data-toggle="pill" href="#phase1-laki" aria-selected="false">
+                                      Гель-лаки
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="categoryName" data-toggle="pill" href="#phase1-kraski" aria-selected="false">
+                                        Гель-краски
+                                    </a>
+                                </li>
+                              </ul>
+                            <div class="tab-content mt-15px d-md-none">
+                                <div class="tab-pane fade show active" id="phase1-top" role="tabpanel">
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="tab-pane fade" id="phase1-laki" role="tabpanel">
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="tab-pane fade" id="phase1-kraski" role="tabpanel">
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="phase2" role="tabpanel">
+                            <div class="row categoriesWrapper d-none d-md-flex">
+                                <div class="col-lg-3 col-md-4 col-auto categoryWrapper">
+                                    <div class="categoryName mb-25px">Базы</div>
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-auto categoryWrapper">
+                                    <div class="categoryName mb-25px">Архитектура</div>
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-auto categoryWrapper">
+                                    <div class="categoryName mb-25px">Дизайн</div>
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <ul class="nav categoriesMobileTabs d-md-none">
+                                <li class="nav-item" role="presentation">
+                                  <a class="active categoryName" data-toggle="pill" href="#phase2-base" aria-selected="true">
+                                      Базы
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="categoryName" data-toggle="pill" href="#phase2-architecture" aria-selected="false">
+                                        Архитектура
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="categoryName" data-toggle="pill" href="#phase2-design" aria-selected="false">
+                                        Дизайн
+                                    </a>
+                                </li>
+                              </ul>
+                            <div class="tab-content mt-15px d-md-none">
+                                <div class="tab-pane fade show active" id="phase2-base" role="tabpanel">
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="tab-pane fade" id="phase2-architecture" role="tabpanel">
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                                <div class="tab-pane fade" id="phase2-design" role="tabpanel">
+                                    <div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/resin_base.png">
+    <img src="img/gc009.png">
+    <img src="img/gc008.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc008.png">
+    <img src="img/resin_base.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+<div class="smallSubcategoryWrapper">
+    <img src="img/gc009.png">
+    <div>
+        <div class="subCategoryName">Resin base</div>
+        Для педикюра
+    </div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="phase3" role="tabpanel">
+                            3
+                        </div>
+                        <div class="tab-pane" id="phase4" role="tabpanel">
+                            4
+                        </div>
+                        <div class="tab-pane" id="phase5" role="tabpanel">
+                            5
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid whiteBg pb-100px pb-phone-35px">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-40px splashBg" style="background-image: url('img/sota_splash.jpg');">
+                    <div class="pageTitle blackText">
+                        Базовые гели SOTA
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-40px pt simpleText blackText">
+                    <div>
+                        <div class="goldText text-uppercase">
+                            <b>Функционал</b>
+                        </div>
+                        <div class="horisontalGoldSep mt-10px"></div>
+                        <div class="mt-25px">
+                            <p>Базовое покрытие с выравниванием в гель-лаковой системе.</p>
+                            <p>
+                                Основа для всех моделирующих материалов гелевой системы Sota, 
+                                включая Холодные акрилы (для обеспечения наилучшей сцепки материала с ногтями).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-40px mt-phone-35px">
+                        <div class="goldText text-uppercase">
+                            <b>Технологии работы</b>
+                        </div>
+                        <div class="horisontalGoldSep mt-10px"></div>
+                        <div class="mt-25px">
+                            <p>
+                                На подготовленные ногти нанести Scotch Sota и просушить на воздухе 30 
+                                секунд. Затем нанести на ногти втирающий слой Resin base и при 
+                                необходимости выровнять поверхность ногтя тонкой кистью. Избегать 
+                                попадания материала на кожу. Сушить в ss 24 ватт 60 сек. Перед 
+                                нанесением цветного покрытия рекомендуется удалить остаточный липкий слой
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-40px mt-phone-35px">
+                        <div class="goldText text-uppercase">
+                            <b>Рекомендовано</b>
+                        </div>
+                        <div class="horisontalGoldSep mt-10px"></div>
+                        <div class="mt-25px">
+                            <p>
+                                Для коротких ногтей, для ногтей средней толщины с длиной свободного края до 2 мм., 
+                                а так же в качестве базового слоя под укрепляющие и моделирующие материалы.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-30px mt-phone-45px d-flex alertBlock">
+                        <img src="img/ui/info_icon.svg" class="mr-25px">
+                        <div class="simpleText">
+                            Мягкие и эластичные основы не предназначены для укрепления ногтей и работы в толстый слой!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-30px mt-phone-40px">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid darkGrayBg pb-150px pb-phone-50px">
+    <div class="row overflow-hidden">
+        <div class="container">
+            <div class="row mt-85px mt-phone-100px">
+                <div class="col-12">
+    <div class="overTitleCaption">
+        сертифицированная продукция
+    </div>
+
+    <div class="row mt-25px mt-phone-10px">
+        <div class="col-lg-7">
+            <div class="subTitle">
+                8 F R E E безопасные продукты для мастера и клиента
+            </div>
+            <div class="horisontalSep mt-35px mt-phone-20px"></div>
+            <div class="row mt-45px mt-phone-20px">
+                <div class="col-lg-6 offset-lg-1 simpleText">
+                    В составе продукции SOTA отсутствуют опасные для здоровья вещества,
+                     такие как: дибутилфталат, формальдегид, толуол, фенолформальдегидная 
+                     смола, камфора, парабены, метилизотиазолинон,
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+            <img src="img/8free.jpg" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="mt-15px justify-content-end d-none d-lg-flex">
+        <div class="d-flex align-items-center">
+            <a href="javascript:void(0)" onclick="sertificatesCarousel.trigger('prev.owl.carousel')">
+                <img src="img/ui/carousel_left.svg">
+            </a>
+            <a href="javascript:void(0)" onclick="sertificatesCarousel.trigger('next.owl.carousel')">
+                <img src="img/ui/carousel_right.svg">
+            </a>
+        </div>
+    </div>
+
+    <div class="owl-carousel sertificatesCarousel overflowCarousel mt-60px mt-phone-45px">
+        <div class="sertificate embl">
+            <div>
+                <img src="img/embl.svg">
+                <div class="simpleText mt-35px">
+                    Наша продукция прошла все необходимые тестирования 
+                    на загрязнения в Европейской Химической Лаборатории 
+                </div>
+            </div>
+        </div>
+        <div class="sertificate">
+            <a data-fancybox="sertificate" href="img/sertificate.jpg">
+                <img src="img/sertificate.jpg">
+            </a>
+        </div>
+        <div class="sertificate">
+            <a data-fancybox="sertificate" href="img/sertificate.jpg">
+                <img src="img/sertificate.jpg">
+            </a>
+        </div>
+        <div class="sertificate">
+            <a data-fancybox="sertificate" href="img/sertificate.jpg">
+                <img src="img/sertificate.jpg">
+            </a>
+        </div>
+        <div class="sertificate">
+            <a data-fancybox="sertificate" href="img/sertificate.jpg">
+                <img src="img/sertificate.jpg">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let sertificatesCarousel;
+
+        $(document).ready(function(){
+            sertificatesCarousel = $(".sertificatesCarousel").owlCarousel({
+                autoWidth: true,
+                margin: 30,
+                dots: false,
+            });
+        });
+
+
+    </script>
+
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

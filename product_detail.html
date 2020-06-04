@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ОЗА</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Playfair+Display&amp;display=swap">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" 
+    integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" 
+    crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="//unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/selectric.css">
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container-fluid darkGrayBg pb-50px">
+    <div class="row mt-50px">
+        <div class="container">
+            <div class="row detailCard">
+                <div class="col-12 d-lg-none">
+                    <div class="pageTitle text-center">
+                        ELASTIC BLUEBERRY | БАЗА ГИБКАЯ SOTA
+                    </div>
+                </div>
+                <div class="col-lg-1 pr-0 d-none d-lg-flex align-items-center">
+                    <div class="detailGallaryNav">
+                        <a href="javascript:void(0)" onclick="detailGallary.trigger('to.owl.carousel', [0]);">
+                            <img src="img/detail_gallery_nav.png">
+                        </a>
+                        <a href="javascript:void(0)" onclick="detailGallary.trigger('to.owl.carousel', [1]);">
+                            <img src="img/detail_gallery_nav.png">
+                        </a>
+                        <a href="javascript:void(0)" onclick="detailGallary.trigger('to.owl.carousel', [2]);">
+                            <img src="img/detail_gallery_nav.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 mt-tablet-60px">
+                    <div class="detailGallaryWrapper">
+
+                        <a href="javascript:void(0)" class="controlBtn prev" 
+                            onclick="detailGallary.trigger('prev.owl.carousel');">
+                            <img src="img/ui/carousel_left_no_border.svg">
+                        </a>
+
+                        <div class="owl-carousel" id="detailGallary">
+                            <div class="photoWrapper">
+                                <img src="img/product_detail.png">
+                            </div>
+                            <div class="photoWrapper">
+                                <img src="img/product_detail.png">
+                            </div>
+                            <div class="photoWrapper">
+                                <img src="img/product_detail.png">
+                            </div>
+                        </div>
+
+                        <a href="javascript:void(0)" class="controlBtn next" 
+                            onclick="detailGallary.trigger('next.owl.carousel');">
+                            <img src="img/ui/carousel_right_no_border.svg">
+                        </a>
+    
+                        <script>
+                            let detailGallary;
+    
+                            $(document).ready(function(){
+                                detailGallary = $("#detailGallary").owlCarousel({
+                                    items: 1,
+                                    mouseDrag: false,
+                                    dots: false,
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-md-5 mt-15px mt-tablet-60px mt-phone-20px">
+                    <div class="pageTitle d-none d-lg-block">
+                        ELASTIC BLUEBERRY | БАЗА ГИБКАЯ SOTA
+                    </div>
+
+                    <div class="d-flex d-md-block">
+                        <div class="mt-25px mt-tablet-0px mr-phone-45px">
+                            <div class="simpleText redText">
+                                Объем
+                            </div>
+                            <div class="mt-10px selectWrapper">
+                                <select id="valueSelect">
+                                    <option>18 ml</option>
+                                    <option>24 ml</option>
+                                    <option>36 ml</option>
+                                </select>
+    
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#valueSelect').selectric();
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="mt-25px mt-phone-0px">
+                            <div class="simpleText redText">
+                                Цена
+                            </div>
+                            <div class="price mt-10px mt-phone-15px">
+                                750 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-25px">
+                        <a href="#" class="actionBtn">
+                            В корзину
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-25px d-none d-lg-block">
+                    <div class="aboutBrand">
+
+    <img src="img/sota_logo.svg" alt="Sota" class="img-fluid">
+
+    <div class="mt-15px linksWrapper">
+        <div class="horisontalSep"></div>
+        <div>
+            <a href="#">
+                О бренде SOTA
+            </a>
+        </div>
+        <div class="horisontalSep"></div>
+        <div>
+            <a href="#">
+                Себестоимость<br>процедур
+            </a>
+        </div>
+        <div class="horisontalSep"></div>
+        <div>
+            <a href="#" class="redText">
+                Скачать каталог
+            </a>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="row mt-85px mt-tablet-60px">
+                <div class="col-lg-10">
+                    <ul class="nav nav-tabs ozaTabs" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="desc-tab" data-toggle="tab" href="#desc" role="tab" 
+                            aria-controls="desc" aria-selected="true">Описание</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="specs-tab" data-toggle="tab" href="#specs" role="tab" 
+                            aria-controls="specs" aria-selected="false">Характеристики</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="tech-tab" data-toggle="tab" href="#tech" role="tab" 
+                            aria-controls="tech" aria-selected="false">Технология работы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="usage-tab" data-toggle="tab" href="#usage" role="tab" 
+                              aria-controls="usage" aria-selected="false">Применение</a>
+                          </li>
+                      </ul>
+                      <div class="tab-content mt-25px">
+                        <div class="tab-pane fade show active" id="desc" role="tabpanel" aria-labelledby="desc-tab">
+                            <div class="simpleText">
+                                <p>Базовый гель средне-жидкий. Гибкая основа. Рекомендованная толщина слоя до 1 мм.</p>
+                                <p>— Базовое покрытие с выравниванием в гель-лаковой системе</p>
+                                <p>— Основа для всех укрепляющих и моделирующих материалов гелевый системы Sota, 
+                                включая Cold acrilyc - полигель (для обеспечения сцепки материала с ногтями).</p>
+                                <p>
+                                    Интересный факт: при поджатии искусственного материала, эластичная подложка
+                                    предотвращает повреждение ногтевой пластины, так как позволяет ногтю гнуться.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="specs" role="tabpanel" aria-labelledby="specs-tab">...</div>
+                        <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">...</div>
+                        <div class="tab-pane fade" id="usage" role="tabpanel" aria-labelledby="usage-tab">...</div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row d-lg-none justify-content-center mt-65px">
+                <div class="col-auto">
+                    <div class="aboutBrand">
+
+    <img src="img/sota_logo.svg" alt="Sota" class="img-fluid">
+
+    <div class="mt-15px linksWrapper">
+        <div class="horisontalSep"></div>
+        <div>
+            <a href="#">
+                О бренде SOTA
+            </a>
+        </div>
+        <div class="horisontalSep"></div>
+        <div>
+            <a href="#">
+                Себестоимость<br>процедур
+            </a>
+        </div>
+        <div class="horisontalSep"></div>
+        <div>
+            <a href="#" class="redText">
+                Скачать каталог
+            </a>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid whiteBg pb-30px">
+    <div class="row">
+        <div class="container">
+            <div class="row mt-50px">
+                <div class="col-12">
+                    <div class="pageTitle blackText">
+                        С этим товаром покупают:
+                    </div>
+
+                    <div class="row mt-35px">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="productCardWrapper">
+    <a href="#detail">
+        <div class="productCard">
+            <div class="photoWrapper">
+                <img src="img/product_card_photo.png">
+            </div>
+            <div>
+                <div class="nameAndDesc mt-15px mt-phone-0px">
+                    INTENSIVE
+                    <div>Крем-сыворотка для рук с аргановым маслом и авокадо</div>
+                </div>
+    
+                <div class="d-flex align-items-end justify-content-between d-md-block mt-phone-15px">
+                    <div class="valve mt-25px mt-phone-0px">
+                        18ml
+                    </div>
+                    <div class="price mt-10px mt-phone-0px">
+                        750 ₽
+                    </div>
+                </div>
+
+                <div class="mt-10px d-md-none">
+                    <a href="#" class="goldText text-uppercase addToCartMobile">
+                        Добавить в корзину
+                    </a>  
+                </div>
+            </div>
+        </div>    
+    </a>
+    <a href="#cart" class="actionBtn addToCart">
+        В корзину
+    </a>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid darkGrayBg pb-50px">
+    <div class="row overflow-hidden">
+        <div class="container">
+            <div class="row mt-20px mt-phone-70px">
+                <div class="col-12">
+    <div class="d-flex align-items-start justify-content-between">
+        <div class="pageTitle">
+            Отзывы
+        </div>
+        <div class="align-items-center d-none d-md-flex">
+            <a href="javascript:void(0)" onclick="reviewsCarousel.trigger('prev.owl.carousel')">
+                <img src="img/ui/carousel_left.svg">
+            </a>
+            <a href="javascript:void(0)" onclick="reviewsCarousel.trigger('next.owl.carousel')">
+                <img src="img/ui/carousel_right.svg">
+            </a>
+        </div>
+    </div>
+    <div class="mt-30px mt-phone-25px">
+        <div class="owl-carousel reviewsCarousel overflowCarousel">
+            <div class="reviewCard">
+                <div class="userInfo d-flex align-items-center">
+                    <img src="img/review.jpg" class="photo">
+                    <div>
+                        <div class="name">
+                            Маргарита<br>Сухих
+                        </div>
+                        <div class="position">
+                            Мастер педикюра г.Омск
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviewText mt-20px mt-phone-15px">
+                    Наша продукция прошла все необходимые тестирования на загрязнения в Европейской 
+                    Химической Лаборатории в Германии. Наличие Российской и Европейской сертификации 
+                </div>
+            </div>
+            <div class="reviewCard">
+                <div class="userInfo d-flex align-items-center">
+                    <img src="img/review.jpg" class="photo">
+                    <div>
+                        <div class="name">
+                            Маргарита<br>Сухих
+                        </div>
+                        <div class="position">
+                            Мастер педикюра г.Омск
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviewText mt-20px mt-phone-15px">
+                    Наша продукция прошла все необходимые тестирования на загрязнения в Европейской Химической 
+                    Лаборатории в Германии. Наличие Российской и Европейской сертификации Европейской 
+                    Химической Лаборатории в Германии. Наличие Российской и Европейской сертификации 😊
+                </div>
+            </div>
+            <div class="reviewCard leaveReview" style="background-image: url('img/leave_review.jpg')">
+                <div>
+                    <div class="pageTitle">
+                        Скидка 5%<br>за отзыв
+                    </div>
+                    <div class="mt-10px">
+                        Скидка предоставляется на любую корзину при следующем заказе
+                    </div>
+                    <a class="actionBtn mt-20px" href="#">
+                        Оставить отзыв
+                    </a>
+                </div>
+            </div>
+            <div class="reviewCard">
+                <div class="userInfo d-flex align-items-center">
+                    <img src="img/review.jpg" class="photo">
+                    <div>
+                        <div class="name">
+                            Маргарита<br>Сухих
+                        </div>
+                        <div class="position">
+                            Мастер педикюра г.Омск
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviewText mt-20px mt-phone-15px">
+                    Наша продукция прошла все необходимые тестирования на загрязнения в Европейской 
+                    Химической Лаборатории в Германии. Наличие Российской и Европейской сертификации 
+                </div>
+            </div>
+            <div class="reviewCard">
+                <div class="userInfo d-flex align-items-center">
+                    <img src="img/review.jpg" class="photo">
+                    <div>
+                        <div class="name">
+                            Маргарита<br>Сухих
+                        </div>
+                        <div class="position">
+                            Мастер педикюра г.Омск
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviewText mt-20px mt-phone-15px">
+                    Наша продукция прошла все необходимые тестирования на загрязнения в Европейской 
+                    Химической Лаборатории в Германии. Наличие Российской и Европейской сертификации 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let reviewsCarousel;
+
+    $(document).ready(function(){
+        reviewsCarousel = $(".reviewsCarousel").owlCarousel({
+            items: 3,
+            margin: 30,                        
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: true,
+                },
+                768: {
+                    items: 2,
+                    dots: false,
+                },
+                1200: {
+                    items: 3,
+                    dots: false,
+                }
+            }
+        });
+    });
+
+
+</script>                    
+            </div>
+
+            <div class="mt-85px mt-phone-70px">
+                <div class="paymentAndDeliveryWrapper">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="title">
+                Способы доставки
+            </div>
+            <div class="smallText semiTransparent">
+                Доставка осуществляется только после 100%<br>
+                предоплаты товара
+            </div>
+            <div class="mt-20px">
+                Транспортная компания: EMS, СДЭК<br>
+                <br>
+                Почта России (до 20 рабочих дней)<br>
+                <br>
+                Самовывоз: г.Омск, ул. 5й Армии, 6
+            </div>
+            <div class="mt-25px smallText">
+                После оплаты мы высылаем почтовый индикатор отслеживания, по<br>
+                которому вы в любой момент можете уточнить местоположение<br>
+                посылки
+            </div>
+        </div>
+        <div class="col-md-6 mt-phone-50px">
+            <div class="title">
+                Способы оплаты
+            </div>
+            <img src="img/payment_systems.svg">
+            <div class="mt-20px">
+                Международный счет Pay Pal<br>
+                <br>
+                Карта Visa или Mastercard<br>
+                <br>
+                Наличными в г.Омск, ул. 5й Армии, 6
+            </div>
+            <div class="mt-25px smallText">
+                Если вы хотите оплатить товар другим способом, это можно сделать<br>
+                обратившись по телефону:<br>
+                <b class="redText">+7 (968) 100-04-34</b>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
