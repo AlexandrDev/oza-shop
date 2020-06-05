@@ -105,12 +105,56 @@
                     <div class="header__link-block">
                         <a href="#" class="header__link">Академия</a>
                         <a href="#" class="header__link">Магазин</a>
+                        <a href="javascript:void(0)" class="header__link" onclick="toggleDropDownMenu(this, '#catalogMenu')">Каталог</a>
                         <a href="#" class="header__link">Контакты</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="catalogMenuWrapper d-none" id="catalogMenu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <ul class="catalogMenu">
+                    <li>
+                        <a href="#">
+                            SOTA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            START
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Оборудование
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Красота и уход
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-end seriesImages">
+                <img src="img/menu_series_base.png" class="img-fluid">
+                <img src="img/menu_series_mc.png" class="img-fluid">
+                <img src="img/menu_series_base.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        function toggleDropDownMenu(self, menuSelector) {
+            $(self).toggleClass('active');
+            $(menuSelector).toggleClass('d-none');
+        }
+    </script>
 
 <div class="container mt-40px">
     <div class="row">
@@ -130,7 +174,7 @@
             <div class="p-lr-15px content">
 
                 <div class="hoverContent">
-                    <img src="img/start_logo_big.svg" class="mb-20px">
+                    <img src="img/sota_logo_big.svg" class="mb-20px">
                 </div>
 
                 Мировой бренд<br>с амбициями
@@ -143,7 +187,7 @@
         </div>
         <div class="col-md-6 collectionCard">
 
-            <div class="background" style="background-image: url('img/sota.jpg');"></div>
+            <div class="background" style="background-image: url('img/start.jpg');"></div>
 
             <div class="p-lr-15px content">
 
@@ -154,7 +198,7 @@
                 Материалы для начинающих<br>мастеров
                 <div class="mt-40px mt-phone-10px d-flex justify-content-center">
                     <a class="actionBtn" href="#">
-                        Каталог SOTA
+                        Каталог START
                     </a>
                 </div>
             </div>
@@ -247,7 +291,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -256,7 +304,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -264,14 +316,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -284,7 +344,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -293,7 +357,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -301,14 +369,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -321,7 +397,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -330,7 +410,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -338,14 +422,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -358,7 +450,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -367,7 +463,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -375,14 +475,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -395,7 +503,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -404,7 +516,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -412,14 +528,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -459,7 +583,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -468,7 +596,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -476,14 +608,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -493,7 +633,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -502,7 +646,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -510,14 +658,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -527,7 +683,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -536,7 +696,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -544,14 +708,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -561,7 +733,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -570,7 +746,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -578,14 +758,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -595,7 +783,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -604,7 +796,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -612,14 +808,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -660,7 +864,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -669,7 +877,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -677,14 +889,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -697,7 +917,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -706,7 +930,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -714,14 +942,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -734,7 +970,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -743,7 +983,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -751,14 +995,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -771,7 +1023,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -780,7 +1036,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -788,14 +1048,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -830,7 +1098,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -839,7 +1111,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -847,14 +1123,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -864,7 +1148,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -873,7 +1161,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -881,14 +1173,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -898,7 +1198,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -907,7 +1211,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -915,14 +1223,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -932,7 +1248,11 @@
     <img src="img/resin_base.png">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -941,7 +1261,11 @@
     <img src="img/gc009.png">
     <img src="img/gc008.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
@@ -949,14 +1273,22 @@
     <img src="img/gc008.png">
     <img src="img/resin_base.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>
 <div class="smallSubcategoryWrapper">
     <img src="img/gc009.png">
     <div>
-        <div class="subCategoryName">Resin base</div>
+        <div class="subCategoryName">
+            <a href="#" class="redTextOnHover">
+                Resin base
+            </a>
+        </div>
         Для педикюра
     </div>
 </div>

@@ -105,12 +105,56 @@
                     <div class="header__link-block">
                         <a href="#" class="header__link">Академия</a>
                         <a href="#" class="header__link">Магазин</a>
+                        <a href="javascript:void(0)" class="header__link" onclick="toggleDropDownMenu(this, '#catalogMenu')">Каталог</a>
                         <a href="#" class="header__link">Контакты</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="catalogMenuWrapper d-none" id="catalogMenu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <ul class="catalogMenu">
+                    <li>
+                        <a href="#">
+                            SOTA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            START
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Оборудование
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Красота и уход
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-end seriesImages">
+                <img src="img/menu_series_base.png" class="img-fluid">
+                <img src="img/menu_series_mc.png" class="img-fluid">
+                <img src="img/menu_series_base.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        function toggleDropDownMenu(self, menuSelector) {
+            $(self).toggleClass('active');
+            $(menuSelector).toggleClass('d-none');
+        }
+    </script>
 
 <div class="container-fluid darkGrayBg pb-50px">
     <div class="row mt-45px">

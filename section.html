@@ -105,12 +105,56 @@
                     <div class="header__link-block">
                         <a href="#" class="header__link">Академия</a>
                         <a href="#" class="header__link">Магазин</a>
+                        <a href="javascript:void(0)" class="header__link" onclick="toggleDropDownMenu(this, '#catalogMenu')">Каталог</a>
                         <a href="#" class="header__link">Контакты</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="catalogMenuWrapper d-none" id="catalogMenu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <ul class="catalogMenu">
+                    <li>
+                        <a href="#">
+                            SOTA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            START
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Оборудование
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Красота и уход
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-end seriesImages">
+                <img src="img/menu_series_base.png" class="img-fluid">
+                <img src="img/menu_series_mc.png" class="img-fluid">
+                <img src="img/menu_series_base.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        function toggleDropDownMenu(self, menuSelector) {
+            $(self).toggleClass('active');
+            $(menuSelector).toggleClass('d-none');
+        }
+    </script>
 
 <div class="container-fluid darkGrayBg pb-50px">
     <div class="row overflow-hidden">
@@ -153,38 +197,45 @@
                             <div class="valuesWrapper mt-25px">
                                 <div class="colorItem">
                                     <input type="checkbox" id="exampleColorCheck1">
-                                    <label for="exampleColorCheck1" 
-                                    style="background: linear-gradient(180deg, #FF7979 0%, #FFAAAA 100%);"></label>
+                                    <label for="exampleColorCheck1">
+                                        <span class="color" style="background: linear-gradient(180deg, #FF7979 0%,
+                                         #FFAAAA 100%);"></span>
+                                    </label>
                                 </div>
                                 <div class="colorItem">
                                     <input type="checkbox" id="exampleColorCheck2">
-                                    <label for="exampleColorCheck2" 
-                                    style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, 
-                                    rgba(255, 255, 255, 0.49) 100%), #FF81FA;"></label>
+                                    <label for="exampleColorCheck2">
+                                        <span class="color" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, 
+                                        rgba(255, 255, 255, 0.49) 100%), #FF81FA;"></span>
+                                    </label>
                                 </div>
                                 <div class="colorItem">
                                     <input type="checkbox" id="exampleColorCheck3">
-                                    <label for="exampleColorCheck3" 
-                                    style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
-                                    rgba(255, 255, 255, 0.49) 100%), #FF985E;"></label>
+                                    <label for="exampleColorCheck3">
+                                        <span class="color"  style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+                                        rgba(255, 255, 255, 0.49) 100%), #FF985E;"></span>
+                                    </label>
                                 </div>
                                 <div class="colorItem">
                                     <input type="checkbox" id="exampleColorCheck4">
-                                    <label for="exampleColorCheck4" 
-                                    style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
-                                    rgba(255, 255, 255, 0.49) 100%), #8186FF;"></label>
+                                    <label for="exampleColorCheck4">
+                                        <span class="color" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+                                        rgba(255, 255, 255, 0.49) 100%), #8186FF;"></span>
+                                    </label>
                                 </div>
                                 <div class="colorItem">
                                     <input type="checkbox" id="exampleColorCheck5">
-                                    <label for="exampleColorCheck5" 
-                                    style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
-                                    rgba(255, 255, 255, 0.49) 100%), #88C86B;"></label>
+                                    <label for="exampleColorCheck5">
+                                        <span class="color" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+                                        rgba(255, 255, 255, 0.49) 100%), #88C86B;"></span>
+                                    </label>
                                 </div>
                                 <div class="colorItem">
                                     <input type="checkbox" id="exampleColorCheck6">
-                                    <label for="exampleColorCheck6" 
-                                    style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
-                                    rgba(255, 255, 255, 0.49) 100%), #D51593;"></label>
+                                    <label for="exampleColorCheck6">
+                                        <span class="color" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+                                        rgba(255, 255, 255, 0.49) 100%), #D51593;"></span>
+                                    </label>
                                 </div>
                             </div>
                         </div>

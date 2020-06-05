@@ -231,7 +231,8 @@ button:focus {
   margin-left: 0;
 }
 
-.header__link:hover {
+.header__link:hover,
+.header__link.active {
   text-decoration: none;
   color: #EF3B3B;
 }
@@ -270,6 +271,53 @@ button:focus {
 
 .messengers .instagram {
   z-index: 6;
+}
+
+.catalogMenuWrapper {
+  position: absolute;
+  top: 160px;
+  height: auto;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  color: #18191A;
+  z-index: 10;
+  padding: 32px 0 45px;
+}
+
+.catalogMenuWrapper .catalogMenu {
+  list-style: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 33%;
+}
+
+.catalogMenuWrapper .catalogMenu li {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalogMenuWrapper .catalogMenu li.active,
+.catalogMenuWrapper .catalogMenu li:hover {
+  color: #EF3B3B;
+}
+
+.catalogMenuWrapper .seriesImages img {
+  width: 216px;
+}
+
+.catalogMenuWrapper .seriesImages img:not(:first-child) {
+  margin-left: -156px;
 }
 
 .mobile-menu {
@@ -1119,6 +1167,10 @@ button:focus {
 }
 
 .redText {
+  color: #EF3B3B;
+}
+
+.redTextOnHover:hover {
   color: #EF3B3B;
 }
 
@@ -2774,8 +2826,8 @@ textarea.ozaInput {
 }
 
 .filterWrapepr .propertyWrapper.colorProp .valuesWrapper .colorItem {
-  width: 54px;
-  height: 54px;
+  width: 56px;
+  height: 56px;
   margin: 0 7px 15px;
 }
 
@@ -2784,10 +2836,21 @@ textarea.ozaInput {
   display: -ms-flexbox;
   display: flex;
   border-radius: 50%;
-  width: 54px;
-  height: 54px;
+  width: 56px;
+  height: 56px;
   cursor: pointer;
   margin-bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 4px;
+}
+
+.filterWrapepr .propertyWrapper.colorProp .valuesWrapper .colorItem label .color {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
 }
 
 .filterWrapepr .propertyWrapper.colorProp .valuesWrapper .colorItem input {
